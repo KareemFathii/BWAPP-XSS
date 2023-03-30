@@ -1,13 +1,22 @@
            XSS-REFLECTED-HREF
 
            *First you go choose the xss relected href . 
+           
            *You can notice that he asking you for enter name .
+           
            *let's try putting (<),("),
+           
            *You can see that your input details are reflected in the next page .
+           
            *Then we notice he takes you to a page where you can see a table where you vote for a movie 
+           
            *I started viewing source page by (right click) and choose view page source.
+           
            *you notice that he is passing the parameter "name" in every href tag  
+           
            *After you vote you can see the change in the url 
+           
            *After that you can just back to the first page 
+           
            *Now we can use the payload 
            </script> <script>alert('done')</script>
