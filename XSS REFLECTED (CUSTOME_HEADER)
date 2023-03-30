@@ -1,0 +1,18 @@
+                           XSS REFLECTED (CUSTOME_HEADER) 
+
+  * Open your burpsuite then, intercept the request
+
+  * IN burpsuite : you put Header :
+  bWAPP : "Done" <=== You can put any thing , then you forward the request .
+
+  *Turn off the intercept of the burpsuite . 
+
+  *Go to the page and reload the page . 
+
+  *You can see the name we put  in the custome header we write bWAPP is shown beside it . 
+
+  * Go pack to the burpsuite , the let's put the payload 
+  bWAPP : <script>alert('Done')</script> 
+
+  *Now go and use any other payloads .
+
