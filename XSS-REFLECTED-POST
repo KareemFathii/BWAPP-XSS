@@ -1,0 +1,12 @@
+                             ((XSS-REFLECTED-POST))
+
+                   *Go and choose xss reflected post 
+                   *Put any input you want 
+                   * notice the input is reflected in the page 
+                   * put your payload 
+                           <script> alert('Done')</script> 
+
+
+
+                    *****You also can solve it by using burpsuit when you intercept the request you can se the header first-name 
+                    also put the payload and put anything in the last name.         

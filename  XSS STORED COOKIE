@@ -1,0 +1,11 @@
+                                     ((((( XSS STORED COOKIE)))))
+
+                                     * First, go choose xss stored cookie .
+                                     *open your burpsuite and make the intercipt on to know what's going on in the background .
+                                     *choose the movie and press on like button 
+                                     *now we got the http request as you can see [GET /bWAPP/xss_stored_2.php?genre=horror&form=like HTTP/1.1]
+                                     you can see the movie genre go and put anything else like ('comedy') 
+                                     *Then forward the request 
+                                     *Again go to the page and choose movie from the list 
+                                     *Go to burpsuite 
+                                     *AS you can see here [Cookie: security_level=0; PHPSESSID=bf016de75d246b13bb6087b45fdf3834; movie_genre=comedy] =====> [movie_genre=comedy] the movie genre we put has rflected to the cookie header so i could able to insert again a movie i want to the parameter .

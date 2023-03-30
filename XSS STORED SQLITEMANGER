@@ -1,0 +1,34 @@
+    XSS STORED SQLITEMANGER 
+
+ *First go and choose xss stored SQLiteManger .
+
+ *After you open notice tht there message "The SQLiteManager version is vulnerable to Cross-Site Scripting!"
+
+ And the hint is "CVE-2012-5105"
+
+ *I started searching about the number to get more information about this vulnerability.
+
+ *I found that the version 1.2.4 version there was an xss vulnerability where the attacker can inject arbitary web script to DB shell in     main.php and index.php , you can get the compelete vulnerability visit the link https://www.exploit-db.com/exploits/36509    
+
+ *An attacker may leverage these issues to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.
+
+ * Go and press  "SQLiteManager"  after you go to the page press right click and go view page source , 
+ then go choose 'main.php' , after that in the url go remove the "view-source:" and then press enter. 
+
+ 
+ *Then , In the name text box give the payload : 
+ "</script><script>alert(document.cookie)</script>"
+ as input and then click save .
+
+  
+
+
+
+
+
+
+
+
+
+
+
