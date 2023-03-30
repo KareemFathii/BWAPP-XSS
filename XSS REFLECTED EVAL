@@ -1,0 +1,9 @@
+                                            XSS REFLECTED EVAL 
+
+ *Go choose xss reflected eval . 
+
+ *You can notice in the url (date=Date()) .
+
+ *You can just remove function (Date()) , and put your payload 
+     alert("done")   
+
